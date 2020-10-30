@@ -7,4 +7,4 @@
         <app-quote-detailed *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detailed>
     </div>
     </ul>
-    <p *ngIf='quotes.length > 1'>too many quotes</p>
+    <p *ngIf='quotes.length > 4'>too many quotes</p>
