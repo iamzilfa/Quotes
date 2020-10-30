@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
     new Quote(1, 'When you learn, teach, when you get, give.', 'ObamMaya Angelou','Zilfa',new Date(2020,3,14),5,2),
-    new Quote(2,'Buy Cookies','Michelle', 'Diane',new Date(2019,6,9),3,2),
+    new Quote(2,'Live as if you were to die tomorrow. Learn as if you were to live forever.','Mahatma Gandhi', 'Diane',new Date(2019,6,9),3,2),
   ];
 
   toggleDetails(index){
