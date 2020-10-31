@@ -8,10 +8,20 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailedComponent implements OnInit {
 
+  numberOfVotes: number = 0;
+
+  upvoteButtonClick() {
+    this.numberOfVotes++;
+  }
+
+  downvoteButtonClick() {
+    this.numberOfVotes--;
+  }
+
   @Input() quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  quoteDelete(complete:boolean){
+  quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
   constructor() { }

@@ -1,12 +1,23 @@
-<div class="angular">
-<h1>Inspirational Quotes</h1>
-    <hr>
-    <ul>
+<div class="container">
+  <h1>Inspirational Quotes</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
       <div *ngFor='let quote of quotes; let i = index'>
-       <li>{{quote.quote}} created on {{quote.completeDate | date}}</li>
-       <button (click)='toggleDetails(i)'>Toggle details</button>
-        <app-quote-detailed *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detailed>
+        <div>
+          <h6>{{quote.quote}} created on {{quote.completeDate | date}}</h6>
+          <button (click)='toggleDetails(i)'>Toggle details</button>
+        </div>
+
+        <div *ngIf='quote.showDescription'>
+          <app-quote-detailed [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detailed>
+        </div>
+      </div>
     </div>
-    </ul>
-    <p *ngIf='quotes.length > 4'>too many quotes</p>
+    <div class="col-md-6">
+      <app-quote-form></app-quote-form>
+    </div>
+  </div>
+
+  <p *ngIf='quotes.length > 4'>too many quotes</p>
 </div>
