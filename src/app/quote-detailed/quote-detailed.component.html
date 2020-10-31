@@ -1,6 +1,7 @@
-<p>Author: {{quote.author}}</p>
-<p>Publisher: {{quote.publisher}}</p>
-<p>This quote will be complete in {{quote.completeDate|dateCount}} days</p>
+<p> <span style="font-style: italic;">authored by</span>  {{quote.author | uppercase}}</p>
+<p> <span style="font-style: italic;">published by</span> {{quote.publisher | uppercase}}; {{quote.completeDate|dateCount}} days ago </p>
 <p>{{quote.upvote}}</p>
 <p>{{quote.downvote}}</p>
-<button (click)= 'quoteDelete(true)'>Delete Quote</button>
+<button (click)= 'quoteDelete(true)' class="btn btn-danger">Delete</button>
+<br>
+<br>
