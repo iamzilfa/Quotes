@@ -1,0 +1,18 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.quote {
+    font-style: italic;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Righteous', cursive;
+    color: #33cccc;
+    font-size: 40px;
+    letter-spacing: 2px;
+    
+}

@@ -2,9 +2,31 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 
-/* body {
-    background-image: url(https://res.cloudinary.com/zilfa/image/upload/v1604169364/jason-dent-He_YXURoPyA-unsplash_kkach8.jpg);
+body {
+    background-image: url(https://res.cloudinary.com/zilfa/image/upload/v1604243468/caleb-george-Lh6X0gXu7eg-unsplash_esgtcw.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
- */
+
+hr {
+    background-color: grey;
+}
+
+ .btn{
+     height: 30px;
+ }
+
+ h2 {
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ input {
+     background-color:rgba(0, 0, 0, 0.7) ;
+     color: white;
+ }
+
+ .form-control {
+    background-color: rgba(0, 0, 0, 0.7);
+   
+ }
