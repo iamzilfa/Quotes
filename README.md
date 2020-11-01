@@ -17,7 +17,7 @@ An app for generating and saving new quotes, voting for and deleting them.
 * Internet connection
 
 ## BDD
-* A user create a quote
+* A user can create a quote
 * A user can vote for quotes
 * A user can delete quotes
 
