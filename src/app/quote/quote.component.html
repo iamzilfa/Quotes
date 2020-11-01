@@ -10,7 +10,7 @@
       <hr>
       <div *ngFor='let quote of quotes; let i = index'>
         <div>
-          <h6>{{quote.quote | uppercase}} Published on {{quote.completeDate | date}}</h6>
+          <h6>{{quote.quote | uppercase}}</h6>
           <button (click)='toggleDetails(i)' class="btn btn-info">Show/Hide details</button>
         </div>
         <br>
