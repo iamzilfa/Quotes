@@ -8,23 +8,28 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailedComponent implements OnInit {
 
-  numberOfVotes: number = 0;
-
-  upvoteButtonClick() {
-    this.numberOfVotes++;
-  }
-
-  downvoteButtonClick() {
-    this.numberOfVotes--;
-  }
-
   @Input() quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
-  constructor() { }
+
+
+upVote = 0;
+downVote = 0;
+
+    upvote(){
+    
+      this.upVote = this.upVote+1;
+  
+    }
+   downvote(){
+      
+      this.downVote = this.downVote+1;
+    }
+  
+  constructor() {}
 
   ngOnInit(): void {
   }

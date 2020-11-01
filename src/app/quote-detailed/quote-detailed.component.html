@@ -1,7 +1,7 @@
 <p> <span style="font-style: italic;">authored by</span>  {{quote.author | uppercase}}</p>
 <p> <span style="font-style: italic;">published by</span> {{quote.publisher | uppercase}}; {{quote.completeDate|dateCount}} days ago </p>
-<p>{{quote.upvote}}</p>
-<p>{{quote.downvote}}</p>
+<button (click)='upvote()' class="btn btn-success">{{upVote}} Upvote</button>
+<button (click)='downvote()' class="btn btn-warning">{{downVote}} Downvote</button> &nbsp; &nbsp;&nbsp;&nbsp;
 <button (click)= 'quoteDelete(true)' class="btn btn-danger">Delete</button>
 <br>
 <br>

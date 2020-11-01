@@ -10,18 +10,16 @@
       <hr>
       <div *ngFor='let quote of quotes; let i = index'>
         <div>
-          <button (click)='toggleDetails(i)' class="btn btn-warning">Show/Hide details</button> 
-          <br>
-          <br>
-          <h6>{{quote.quote | uppercase}}</h6>
+          <h6>{{quote.quote | uppercase}} Published on {{quote.completeDate | date}}</h6>
+          <button (click)='toggleDetails(i)' class="btn btn-info">Show/Hide details</button>
         </div>
-
+        <br>
         <div *ngIf='quote.showDescription'>
           <app-quote-detailed [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detailed>
         </div>
       </div>
     </div>
-    
+
   </div>
 
   <p *ngIf='quotes.length > 4'>too many quotes</p>
