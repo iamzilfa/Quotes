@@ -6,7 +6,7 @@
         <div class="form-group">
 
             <label for="quote">Quote</label>
-            <textarea style="width: 400px;" class="form-control" id="quote" rows="3" [(ngModel)]="newQuote.quote" name="quote"
+            <textarea style="width: 400px;" class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote"
                 #quote="ngModel" required></textarea>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                 <p>Quote is required</p>
@@ -35,7 +35,7 @@
         
         <div class="form-group">
 
-            <label for="complete">Completion</label>
+            <label for="complete">Completion</label> &nbsp;
             <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate"
                 #completeDate="ngModel" required>
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
