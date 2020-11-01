@@ -1,4 +1,4 @@
-<p style="text-align: center; font-size: 20px;">"{{quote.author | uppercase}}"</p>
+<p style="text-align: center; font-size: 20px; font-weight: bold;">{{quote.author | uppercase}}</p>
 <p style="text-align: center;"> <small>Posted by {{quote.publisher}}, {{quote.completeDate|dateCount}} days ago </small> </p>
 <button style="margin-right: 3px;" (click)='upvote()' class="btn btn-success">{{upVote}} <i class="fas fa-thumbs-up"></i>vote</button> 
 <button (click)='downvote()' class="btn btn-warning">{{downVote}} <i class="fas fa-thumbs-down"></i>vote</button>
