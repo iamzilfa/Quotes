@@ -1,5 +1,6 @@
 .container {
     background-color: rgba(0, 0, 0, 0.7);
+    width:800px;
 }
 
 .quote {
@@ -13,5 +14,5 @@ h1 {
     font-family: 'Righteous', cursive;
     color: #33cccc;
     font-size: 40px;
-    letter-spacing: 2px;    
+    letter-spacing: 2px;
 }

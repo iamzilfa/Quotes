@@ -6,7 +6,7 @@
         <div class="form-group">
 
             <label for="quote">Quote</label>
-            <textarea style="width: 400px;" class="form-control" id="quote" rows="3" [(ngModel)]="newQuote.quote" name="quote"
+            <textarea style="width: 300px;" class="form-control" id="quote" rows="3" [(ngModel)]="newQuote.quote" name="quote"
                 #quote="ngModel" required></textarea>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                 <p>Quote is required</p>
@@ -16,7 +16,7 @@
         <div class="form-group">
 
             <label for="author">Author</label>
-            <input style="width: 400px;" type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel'
+            <input style="width: 300px;" type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel'
                 required>
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                 <p>Author is required</p>
@@ -26,7 +26,7 @@
         <div class="form-group">
 
             <label for="publisher">Publisher</label>
-            <input style="width: 400px;" type="text" class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="name" #publisher='ngModel'
+            <input style="width: 300px;" type="text" class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="name" #publisher='ngModel'
                 required>
             <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
                 <p>Publisher is required</p>
@@ -42,6 +42,6 @@
                 <p>Date is required</p>
             </div>
         </div>
-        <button style="margin-left: 80px; width: 180px;" type="submit" class="btn btn-info">Submit</button>
+        <button style="margin-left: 100px; width: 140px;" type="submit" class="btn btn-info">Submit</button>
     </form>
 </div>
